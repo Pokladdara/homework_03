@@ -3,7 +3,7 @@ import random
 def get_numbers_ticket(min, max,quantity):
     if not (1 <=min <=max <=1000): #Перевіряємо коректність введеніх данних
         return []
-    if not (min <= quantity <=(max - min + 1)): # Перевіряємо коректність данних
+    if  quantity >= 0: # Перевіряємо коректність данних
         return []
     numbers = set() # Генеруємо унікальні випадкові числа 
     while len(numbers) < quantity:
